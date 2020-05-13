@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 12, 2020 3:27:45 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Reportview.Book" table="book" schema="public" optimistic-lock="version">
+        <id name="bookid" type="int">
+            <column name="bookid" />
+            <generator class="assigned" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" />
+        </property>
+        <property name="publishing" type="string">
+            <column name="publishing" />
+        </property>
+        <property name="dateofpub" type="date">
+            <column name="dateofpub" length="13" />
+        </property>
+        <property name="author" type="string">
+            <column name="author" />
+        </property>
+        <property name="pages" type="java.lang.Integer">
+            <column name="pages" />
+        </property>
+        <property name="bookcate" type="string">
+            <column name="bookcate" />
+        </property>
+    </class>
+</hibernate-mapping>

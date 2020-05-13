@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 12, 2020 3:27:45 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Reportview.Client" table="client" schema="public" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="fname" type="string">
+            <column name="fname" />
+        </property>
+        <property name="lname" type="string">
+            <column name="lname" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="clientcat" type="string">
+            <column name="clientcat" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" />
+        </property>
+    </class>
+</hibernate-mapping>

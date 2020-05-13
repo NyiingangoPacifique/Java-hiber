@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 12, 2020 3:27:45 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Reportview.Checkin" table="checkin" schema="public" optimistic-lock="version">
+        <id name="client" type="string">
+            <column name="client" />
+            <generator class="assigned" />
+        </id>
+        <property name="date" type="date">
+            <column name="date" length="13" />
+        </property>
+        <property name="book" type="string">
+            <column name="book" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" />
+        </property>
+    </class>
+</hibernate-mapping>
